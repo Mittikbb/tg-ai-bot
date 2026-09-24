@@ -55,7 +55,7 @@ async def handle_text(message: Message):
 
     try:
         response = ai_client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-3.1-flash-lite",
             contents=query,
             config=types.GenerateContentConfig(
                 system_instruction=SYSTEM_PROMPT
